@@ -1,0 +1,195 @@
+*{
+	padding:0;
+	margin:0;
+}
+body{
+	background:rgba(0,0,0,0.2);
+	font-family:Arial,sans-serif;
+	font-size:14px;
+}
+#container{
+	width:100%;
+	max-width:1000px;
+	margin:0 auto;
+}
+header{
+	padding:0.5%;
+	margin:5px auto;
+	background: #FFF;
+	border-radius:3px;
+	box-shadow:2px 2px 1px rgba(0,0,0,0.1);
+}
+#logo{
+	padding:0.5% 1%;
+}
+header nav ul{
+	list-style:none;
+	text-align:center;
+}
+header nav ul li{ 
+	cursor:pointer;
+	color:#777;
+	display:inline-block;
+	padding:0.04% 0.5%;
+	border-bottom: 4px solid #dadada;
+	margin:0 0.3%;
+	letter-spacing:1px;
+	text-transform:uppercase;
+	transition: all 0.3s;
+}
+header nav ul li:hover{
+	border-bottom-color:#868686;
+}
+#login{
+	display:none;
+	width:23%;
+	margin:3px auto;
+	padding:1%;
+	background:#FFF;
+	border-radius:3px;
+	box-shadow:2px 2px 1px rgba(0,0,0,0.1);
+}
+#formLogin input[type=submit], #formRegistro input[type=submit], #formPublicacion input[type=submit], #formEditarUsuario input[type=submit]{
+	display:block;
+	background:#dadada;
+	border: 1px solid #999;
+	padding:2px;
+	border-radius:2px;
+	color:#777;
+	text-shadow:0 1px 0px #FFF;
+	margin:4px 0;
+	width:100%;
+	text-align:center;
+}
+#usuarios{
+	display:none;
+}
+#registro{
+	display:none;
+	width:23%;
+	padding:1%;
+	margin:3px auto;
+	background:#FFF;
+	border-radius:3px;
+	box-shadow:2px 2px 1px rgba(0,0,0,0.1);
+}
+#formRegistro input[type=text], #formRegistro input[type=password],#formLogin input[type=text], #formLogin input[type=password]{
+	display:block;
+	width:100%;
+}
+#publicaciones{
+	font-size:0;
+}
+.publicacion{
+	position:relative;
+	
+	width:47%;
+	padding:0.8%;
+	margin:0.7%;
+	background:#FFF;
+	border-radius:3px;
+	box-shadow:2px 2px 1px rgba(0,0,0,0.1);
+	font-size:14px;
+}
+.publicacion:nth-child(2n+1){
+	float:left;
+}
+.publicacion:nth-child(2n){
+	float:right;
+}
+.eliminar{
+	width:14px;
+	height:14px;
+	background:url(../images/eliminar.png);
+	position:absolute;
+	top:8px;
+	right:2%;
+	opacity:0;
+	cursor:pointer;
+	transition: all 0.3s;
+}
+.publicacion:hover .eliminar{
+	opacity:0.4;
+}
+.quote{
+	width:5%;
+	margin-right:2%;
+	margin-bottom:1%;
+	float:left;
+}
+.quote img{
+	width:100%;
+	vertical-align:top;
+}
+.titulo{
+	display:table;
+	padding-bottom:3px;
+	border-bottom:1px dashed #777;
+}
+.autor{
+	padding:4px 0 0 0;
+	margin-top:5px;
+	border-top:1px dashed #777;
+	font-size:0.8em;
+}
+#publicar{
+	padding:1%;
+	margin:4px auto;
+	width:50%;
+	clear:both;
+	text-align:center;
+	text-transform:uppercase;
+	color:#484848;
+	background:#FFF;
+	border-radius:3px;
+	border:2px solid #bcbcbc;
+	cursor:pointer;
+}
+#publicar img{
+	vertical-align:top;
+	margin-right:1%;
+}
+#formPublicacion input[type=text], #formPublicacion textarea{
+	display:block;
+	width:98%;
+	padding:0.5% 1%;
+}
+#formPublicacion label{
+	margin-bottom:10px;
+}
+footer{
+	clear:left;
+	font-size:0.85em;
+	color:#777;
+	text-shadow:0 1px 0px #fff;
+}
+
+.borderojo{
+	border-color:red;
+}
+#nopost{
+	padding:1%;
+	text-align:center;
+	background:#FFF;
+	border:2px solid #bcbcbc;
+	border-radius:3px;
+	color:#999;
+	font-size:16px;
+	text-transform:uppercase;
+	display:none;
+}
+.usuario{
+	display:inline-table;
+	margin:3px;
+	padding:1%;
+	background:#FFF;
+	border-radius:3px;
+	border: 1px solid #bcbcbc;
+}
+
+#formEditarUsuario input[type=text],#formEditarUsuario input[type=password]{
+	display:block;
+	width:98%;
+	padding:1%;
+	margin:2px 0;
+}
